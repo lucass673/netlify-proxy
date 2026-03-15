@@ -1,11 +1,21 @@
 # ========== Nginx ==========
+
+[[redirects]]
+from = "/nginx"
+to = "/nginx/"
+status = 301
+
 [[redirects]]
 from = "/nginx/*"
 to = "https://npm.badd.eu.org:8008/:splat"
 status = 200
 force = true
-
 # ========== PVE ==========
+[[redirects]]
+from = "/homelab"
+to = "/homelab/"
+status = 301
+
 [[redirects]]
 from = "/homelab/*"
 to = "https://homelab.badd.eu.org:8008/:splat"
@@ -13,6 +23,11 @@ status = 200
 force = true
 
 # ========== istoreos ==========
+[[redirects]]
+from = "/istoreos"
+to = "/istoreos/"
+status = 301
+
 [[redirects]]
 from = "/istoreos/*"
 to = "https://istoreos.badd.eu.org:8008/:splat"
